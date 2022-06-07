@@ -14,7 +14,7 @@ namespace Dominisoft.NetworkMapper.Static
 
         public static List<MacTableEntry> DetectedMacTableEntries = new List<MacTableEntry>();
         public static List<string> Locations = new List<string>();
-
+        public static List<DeviceIcon> DeviceIcons = new List<DeviceIcon>();
 
 
 
