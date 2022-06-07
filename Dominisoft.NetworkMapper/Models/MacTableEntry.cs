@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dominisoft.NetworkMapper.Models
 {
-    internal class MacTableEntry
+    public class MacTableEntry
     {
+        public string MacAddress { get; set; }
+        public Guid InterfaceId { get; set; }
+        public Guid DeviceId { get; set; }
     }
 }

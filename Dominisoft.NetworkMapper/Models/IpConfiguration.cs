@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Dominisoft.NetworkMapper.Models
 {
-    internal class IpConfiguration
+    public class IpConfiguration
     {
+        public IpConfiguration()
+        {
+            DnsHosts = new List<string>();
+            VlanId = 1;
+        }
+        public string Address { get; set; }
+        public string SubnetMask { get; set; }
+        public string DefaultGateway { get; set; }
+        public List<string> DnsHosts { get; set; }
+        public int VlanId { get; set; }
     }
 }
